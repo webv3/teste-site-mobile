@@ -96,8 +96,6 @@ header.main .container .main-menu{
     flex-grow: 1;
 }
 
-header.main .container .main-menu ul,
-
 header.main .container .main-menu ul{
     display: flex;
     justify-content: center;
@@ -184,7 +182,6 @@ header.main .container .text-banner > div:nth-child(1){
 header.main .container .text-banner h2{
     font-size: 3em;
     font-weight: bold;
-    line-height: 62px;
     margin-bottom: 35px;
 }
 

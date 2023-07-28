@@ -16,9 +16,14 @@ body > section > .container > h2, body > section > .container > header h2{
 
 /* Header - menu ----------------------------------- */
 body header.main .container .logo{
-    width: 100%;
     text-align: center;
 }
+body header.main .container .logo,
+body header.main .container .logo img{
+    width:60px;
+    height: 60px;
+}
+
 
 header.main .container .logo,
 header.main .container .main-menu{
@@ -29,13 +34,13 @@ header.main .container .main-menu{
 header.main .container .main-menu ul{
     flex-wrap: wrap;
     gap: 20px;
+    padding: 12px;
 }
 header.main .container .main-menu ul li.login{
     margin-left: 5px;
 }
 header.main .container .main-menu ul li a {
     padding: 10px 12px;
-    font-size: 2rem;
 }
 
 
@@ -52,7 +57,7 @@ header.main .container .text-banner{
 }
 header.main .container .text-banner > div{
     width: 100%;
-    padding: 18px;
+    padding: 16px;
 }
 header.main .container .text-banner > div:nth-child(1) {
     background: repeating-conic-gradient(at 100% 100% ,rgb(29, 164, 221) 30deg 35deg, rgb(32, 170, 223) 35deg 40deg);
@@ -62,7 +67,9 @@ header.main .container .text-banner > div:nth-child(2) {
     background: repeating-conic-gradient(at 100% 0 ,rgb(255, 182, 47) 30deg 35deg, rgb(255, 188, 53) 35deg 40deg);
 }
 
-
+header.main .container .text-banner > div h2{
+    font-size: 2em;
+}
 
 
 
@@ -84,6 +91,12 @@ header.main .container .search input,
 header.main .container .search select{
     margin-bottom: 12px;
     font-size: 0.5em;
+}
+header.main .container .search input{
+    border: none;
+}
+header.main .container .search select{
+    background: none;
 }
 
 
@@ -137,9 +150,17 @@ header.main .container .search select{
 /* Categpry ---------------------------- */
 .category .container ul{
     gap: 12px;
+    padding: 16px;
 }
 .category .container ul li {
-    width: calc(33.33% - 8px);
+    width: calc(50% - 6px);
+    padding: 6px;
+}
+.category .container ul li a p{
+    font-size: 0.8em;
+}
+.category .container ul li a img{
+    width: 30%;
 }
 
 
@@ -148,11 +169,11 @@ header.main .container .search select{
 
 /* Hightlight ---------------------------- */
 .highlight .container{
-    padding: 0 18px;
+    padding: 0 16px;
 }
 
 .highlight .container h2{
-    font-size: 2em;
+    font-size: 1.6em;
 }
 .highlight .container h3, .highlight .container p {
     max-width: 100%;
@@ -169,49 +190,55 @@ header.main .container .search select{
 /* Newsletter ------------------------------------------ */
 .newsletter .container {
     flex-direction: column;
-    padding: 12px 24px;
+    padding: 16px;
 }
 .newsletter .container strong{
-    font-size: 1.4em;
+    font-size: 1em;
     text-align:center;
-    padding-bottom: 8px;
+    padding:0 0 8px 0;
 }
 .newsletter .container .field{
     width: 100%;
 }
 .newsletter .container .field input, 
 .newsletter .container .field button {
-    font-size: 1em;
+    font-size: 0.8em;
+    padding: 12px 16px;
 }
+
+
 
 
 /* Footer ---------------------------------------- */
-footer{
+
+body > footer{
     display: block;
     text-align: center;
+    flex-direction: column;
 }
-footer div.logo{
-    width: 100%;
-    margin-bottom: 22px;
+body > footer div.social{
+    margin-bottom: 16px;
 }
-footer div.logo ul{
+body > footer div.social img{
+    display: none;
+}
+
+body > footer div.social .redes{
     justify-content: center;
 }
-footer div.logo > img{
-    width:160px;
-}
-footer div.logo ul li a{
-    width:70px;
-    height:70px;
-    padding: 12px;
+
+
+body > footer > ul li a{
+    font-size: 1em;
+    line-height: 2;
 }
 
 
-
-footer > ul li a{
-    font-size: 0.8em;
+body > footer .copyright{
+    margin-top: 16px;
+    opacity: 0.8;
+    font-size: 0.9em;
 }
-
 
 
 }
