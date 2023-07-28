@@ -1,0 +1,217 @@
+
+
+/*@media only screen and (max-device-width: 900px){*/
+@media only screen and (max-width: 800px){
+    
+
+    
+/* titulos das sections */
+body > section > .container > h2, body > section > .container > header h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+
+
+/* Header - menu ----------------------------------- */
+body header.main .container .logo{
+    width: 100%;
+    text-align: center;
+}
+
+header.main .container .logo,
+header.main .container .main-menu{
+    flex-grow: 1;
+    width: auto;
+}
+
+header.main .container .main-menu ul{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+header.main .container .main-menu ul li.login{
+    margin-left: 5px;
+}
+header.main .container .main-menu ul li a {
+    padding: 10px 12px;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+/* Banner ------------------------------------------ */
+header.main .layout-background{display: none;}
+header.main .container .text-banner{
+    justify-content: unset;
+    padding: 0;
+    display: unset;
+}
+header.main .container .text-banner > div{
+    width: 100%;
+    padding: 18px;
+}
+header.main .container .text-banner > div:nth-child(1) {
+    background: repeating-conic-gradient(at 100% 100% ,rgb(29, 164, 221) 30deg 35deg, rgb(32, 170, 223) 35deg 40deg);
+}
+header.main .container .text-banner > div:nth-child(2) {
+    text-align: left;
+    background: repeating-conic-gradient(at 100% 0 ,rgb(255, 182, 47) 30deg 35deg, rgb(255, 188, 53) 35deg 40deg);
+}
+
+
+
+
+
+/* Search ---------------------------- */
+header.main .container .search{
+    padding: 10px;
+    margin: 6px;
+}
+header.main .container .search form {
+    padding: 12px;
+    font-size: 40px;
+    flex-flow: column;
+}
+header.main .container .search button{
+    margin:0;
+    font-size: 0.5em;
+}
+header.main .container .search input,
+header.main .container .search select{
+    margin-bottom: 12px;
+    font-size: 0.5em;
+}
+
+
+
+
+
+
+/* Featured Jobs ---------------------------- */
+.featured-jobs{
+    padding-top: 50px;
+}
+.featured-jobs .container > header div.buttons a{
+    display: none;
+}
+
+
+.featured-jobs .container > ul{
+    gap:8px;
+}
+.featured-jobs .container > ul > li{
+    padding: 12px;
+    min-width: 80vw;
+}
+.featured-jobs .container > ul > li header img{
+    width: 10vw;
+    height: 10vw;
+}
+
+.featured-jobs .container > ul > li header div span {
+    font-size: 0.8em;
+}
+.featured-jobs .container > ul > li header div h3 {
+    font-size: 1em;
+}
+
+.featured-jobs .container > ul > li section .info li.time,
+.featured-jobs .container > ul > li section .info li.calendar,
+.featured-jobs .container > ul > li section .info li.location{
+    padding: 0;
+    font-size: 0.8em;
+}
+.featured-jobs .container > ul > li section .info li i{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* Categpry ---------------------------- */
+.category .container ul{
+    gap: 12px;
+}
+.category .container ul li {
+    width: calc(33.33% - 8px);
+}
+
+
+
+
+
+/* Hightlight ---------------------------- */
+.highlight .container{
+    padding: 0 18px;
+}
+
+.highlight .container h2{
+    font-size: 2em;
+}
+.highlight .container h3, .highlight .container p {
+    max-width: 100%;
+}
+.highlight .container p,
+.highlight .container a{
+    font-size: 1em;
+}
+
+
+
+
+
+/* Newsletter ------------------------------------------ */
+.newsletter .container {
+    flex-direction: column;
+    padding: 12px 24px;
+}
+.newsletter .container strong{
+    font-size: 1.4em;
+    text-align:center;
+    padding-bottom: 8px;
+}
+.newsletter .container .field{
+    width: 100%;
+}
+.newsletter .container .field input, 
+.newsletter .container .field button {
+    font-size: 1em;
+}
+
+
+/* Footer ---------------------------------------- */
+footer{
+    display: block;
+    text-align: center;
+}
+footer div.logo{
+    width: 100%;
+    margin-bottom: 22px;
+}
+footer div.logo ul{
+    justify-content: center;
+}
+footer div.logo > img{
+    width:160px;
+}
+footer div.logo ul li a{
+    width:70px;
+    height:70px;
+    padding: 12px;
+}
+
+
+
+footer > ul li a{
+    font-size: 0.8em;
+}
+
+
+
+}
