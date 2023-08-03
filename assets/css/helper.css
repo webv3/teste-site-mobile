@@ -1,0 +1,81 @@
+
+
+/* PADROES DE BUTTONS ------------------------------- */
+button.bt,
+a.bt,
+a.bt:visited{
+    padding: 10px 26px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    align-self: center;
+    display: inline-block;
+    font-weight: 500;
+}
+
+
+@media (max-width: 800px) {
+    button.bt,
+    a.bt,
+    a.bt:visited{
+        font-size: 1.6em;
+    }
+}
+
+
+
+button.color1,
+a.color1,
+a.color1:visited{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+button.color2,
+a.color2,
+a.color2:visited{
+    background-color: var(--medium-color);
+    color: var(--light-color);
+}
+button.color3,
+a.color3,
+a.color3:visited{
+    background-color:  var(--primary-color);
+    color: var(--light-color);
+}
+button.color4,
+a.color4,
+a.color4:visited{
+    background-color:  var(--secondary-color);
+    color: var(--dark-color);
+}
+
+
+
+
+.button-list{
+    display: flex;
+    gap: 16px;
+}
+.button-list.right{
+    justify-content: right;
+}
+.button-list.center{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    button.bt,
+    a.bt{
+        padding: 5px 13px;
+    }
+    .button-list button.bt + button.bt{
+        margin-left: 6px;
+    }
+}
+

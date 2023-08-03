@@ -1,0 +1,203 @@
+
+::ng-deep body{
+    background-color: #f8f8ef;
+}
+
+
+::ng-deep header.main{
+    background-color: #fff;
+    margin-bottom: 26px;
+}
+
+
+
+::ng-deep header.main .container .logo{
+    width: 200px !important;
+    text-align: center;
+}
+
+
+
+
+/* NOTIFICATION MENU ------------------------  */
+header.main .container .notification-menu{
+    align-self: center;
+}
+header.main .container .notification-menu ul{
+    display: flex;
+    gap: 22px;
+}
+
+header.main .container .notification-menu ul li a{
+    background-color: #ffc743;
+    text-align: center;
+    position: relative;
+    border-radius: 12px;
+    display: block;
+    padding: 10px;
+}
+
+header.main .container .notification-menu ul li a span{
+    background-color: #ff0000;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header.main .container .notification-menu ul li a i{
+    font-size: 1.8em;
+    line-height: 1;
+}
+
+
+/*Icone de hamburguer do menu flutuante*/
+header.main .container .notification-menu ul li.hamburger-icon{
+    padding: 10px 14px;
+    display: none;
+}
+
+/*Esconde botao de login nas paginas internas*/
+::ng-deep header.main .container .main-menu ul li.login{
+    display: none;
+}
+
+
+
+
+/* CONTAINER DO MAIN CONTENT ------------------------------- */
+main{
+    width: 1200px;
+    margin: 0 auto 26px auto;
+    display: flex;
+}
+main .container{
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+/* CONTEUDO PRINCIPAL ------------------------------- */
+main .container{
+    flex-grow: 1;
+    padding-left: 20px;
+    flex-basis: min-content;
+}
+
+main .container section{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+main .container section.box{
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* HEADER DO CONTEUDO ------------------------------------------ */
+main .container section header{
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+main .container section header .title span{
+    display: inline-block;
+    background-color: #d0e8ff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 6px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+main .container section header .title strong{
+    font-weight: bold;
+    font-size: 3em;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+
+    main{
+        width: 100%;
+    }
+
+
+    /*Menu de notificacoes */
+    header.main .container .notification-menu ul{
+        gap: 12px;
+    }
+    header.main .container .notification-menu ul li{
+        align-self: center;
+    }
+    header.main .container .notification-menu ul li a{
+        padding: 6px;
+        border-radius: 6px;
+    }
+    header.main .container .notification-menu ul li a span{
+        font-size: 1.2em;
+        width: 16px;
+        height: 16px;
+        line-height: 1;
+    }
+
+
+
+
+
+    
+
+    /*Conteudo principal ------------------------------------------------------*/
+    main .container{
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    /*titulo do conteudo*/
+    
+    /*Header / nome usuario / bt create a job ------------------------------------ */
+    main .container section.user-info header{
+        margin:0;
+    }
+    
+    main .container section header .title span{
+        padding: 3px 5px;
+        line-height: 1;
+    }
+
+
+
+}
+

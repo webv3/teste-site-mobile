@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("../font/Gilroy-Regular.ttf") format("opentype");
+}
+
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: lighter;
+    src: url("../font/Gilroy-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url("../font/Gilroy-Medium.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: bold;
+    src: url("../font/Gilroy-Bold.ttf") format("opentype");
+}
+
+
+
+:root{
+
+    --default-font-family: "Gilroy";
+    --desktop-font-size: 16px;
+    --mobile-font-size: 10px;
+
+    /*Cores -------------------------------------*/
+    --primary-color: #29b9e5;
+    --primary-color-rgb: 41, 185, 229;
+
+    --secondary-color: #ffc743;
+    --secondary-color-rgb: 255, 199, 67;
+    
+    --light-color: #ffffff;
+    --medium-color: #b1b1b1;
+    --dark-color: #3a3a3a;
+
+
+    /*Espaçamentos ------------------------------*/
+    --large-margin: 16px;
+    --medium-margin: 8px;
+    --small-margin: 4px;
+
+    --large-padding: 16px;
+    --medium-padding: 8px;
+    --small-padding: 4px;
+
+    --teste : #ff55ee;
+}

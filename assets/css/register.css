@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Conteudo principal ---------------------------------------- */
+.container main {
+    flex-wrap: wrap;
+    display: flex;
+    width: 70%;
+    padding: 50px 50px 25px 50px;
+    margin: 0;
+}
+
+.container main .content {
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+}
+
+
+
+
+/* Titulo do content */
+.container main .content section h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.container main .content section h3 i {
+    background-color: var(--light-color);
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 8px;
+}
+
+
+
+
+
+
+/* Formulario padrão / FIELDSET ------------------------------------------*/
+.container main .content section form {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.container main .content section form fieldset {
+    display: flex;
+    gap: 16px;
+    border: none;
+    flex-direction: column;
+}
+
+.container main .content section form fieldset label {
+    display: flex;
+    flex-direction: column;
+}
+
+.container main .content section form fieldset label strong {
+    font-size: 1.4em;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container main .content section form fieldset label input {
+    border: none;
+    border-radius: 6px;
+    height: 28px;
+}
+
+.container main .content section form fieldset label input,
+.container main .content section form fieldset label select {
+    width: 100%;
+}
+
+/* Formulario padrão / FIELDSET ------------------------------------------*/
+
+
+
+
+.container main .content section .button-list {
+    margin-top: 16px;
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-height: 100%;
+    }
+
+    .container aside,
+    .container main {
+        padding: 16px;
+        width: 100%;
+    }
+
+    main section .button-list{
+        justify-content: space-between;
+    }
+
+}
