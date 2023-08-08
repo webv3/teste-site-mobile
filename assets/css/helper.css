@@ -1,9 +1,7 @@
-
-
 /* PADROES DE BUTTONS ------------------------------- */
 button.bt,
 a.bt,
-a.bt:visited{
+a.bt:visited {
     padding: 10px 26px;
     border: none;
     border-radius: 6px;
@@ -11,13 +9,21 @@ a.bt:visited{
     align-self: center;
     display: inline-block;
     font-weight: 500;
+    transition: .2s all ease;
+    text-align: center;
+}
+button.bt:hover,
+a.bt:hover{
+    filter: brightness(1.1) drop-shadow(0 0 4px rgba(0,0,0,0.2));
+    text-decoration: none;
 }
 
 
 @media (max-width: 800px) {
+
     button.bt,
     a.bt,
-    a.bt:visited{
+    a.bt:visited {
         font-size: 1.6em;
     }
 }
@@ -26,40 +32,45 @@ a.bt:visited{
 
 button.color1,
 a.color1,
-a.color1:visited{
+a.color1:visited {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
+
 button.color2,
 a.color2,
-a.color2:visited{
+a.color2:visited {
     background-color: var(--medium-color);
     color: var(--light-color);
 }
+
 button.color3,
 a.color3,
-a.color3:visited{
-    background-color:  var(--primary-color);
+a.color3:visited {
+    background-color: var(--primary-color);
     color: var(--light-color);
 }
+
 button.color4,
 a.color4,
-a.color4:visited{
-    background-color:  var(--secondary-color);
+a.color4:visited {
+    background-color: var(--secondary-color);
     color: var(--dark-color);
 }
 
 
 
 
-.button-list{
+.button-list {
     display: flex;
     gap: 16px;
 }
-.button-list.right{
+
+.button-list.right {
     justify-content: right;
 }
-.button-list.center{
+
+.button-list.center {
     justify-content: center;
 }
 
@@ -69,13 +80,109 @@ a.color4:visited{
 
 
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    zoom:0.8;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .2s;
+    border-radius: 15px;
+}
+
+.slider:hover:before{
+    box-shadow: #000 0 0 6px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 30px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    height: 30px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+    box-shadow: #000 0 0 4px;
+    margin-bottom: -2px;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+input:checked+:before {
+    box-shadow: #000 0 0 4px;
+}
+
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.reveal {
+    transform: translateY(-40px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 800px) {
+
     button.bt,
-    a.bt{
+    a.bt {
         padding: 5px 13px;
     }
-    .button-list button.bt + button.bt{
+
+    .button-list button.bt+button.bt {
         margin-left: 6px;
     }
 }
-
